@@ -409,6 +409,8 @@
 	transition-duration: 1s;
 	-webkit-animation-name: clock;
 	-webkit-animation-duration: 1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+
 	-webkit-animation-iteration-count: infinite;
 }
 @-webkit-keyframes clock{
@@ -425,6 +427,8 @@
 	transition-duration: 1s;
 	-webkit-animation-name: pers;
 	-webkit-animation-duration: 1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+
 	-webkit-animation-iteration-count: infinite;
 }
 @-webkit-keyframes pers{
@@ -440,6 +444,7 @@
 	transition-duration: 1s;
 	-webkit-animation-name: persa;
 	-webkit-animation-duration: 1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
 	-webkit-animation-iteration-count: infinite;
 }
 @-webkit-keyframes persa{
@@ -455,12 +460,13 @@
 	transition-duration: 1s;
 	-webkit-animation-name: trasx;
 	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
 	-webkit-animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes trasx{
 	from {-webkit-transform:translatex(0px);}
-	to {-webkit-transform:translatex(-150px);}
+	to {-webkit-transform:translatex(-50px);}
 }
 
 #animation29{
@@ -471,12 +477,13 @@
 	transition-duration: 1s;
 	-webkit-animation-name: tras_x;
 	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
 	-webkit-animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes tras_x{
 	from {-webkit-transform:translatex(0px);}
-	to {-webkit-transform:translatex(150px);}
+	to {-webkit-transform:translatex(50px);}
 }
 
 #animation30{
@@ -487,12 +494,13 @@
 	transition-duration: 1s;
 	-webkit-animation-name: sx;
 	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
 	-webkit-animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes sx{
 	from { -webkit-transform:translatey(0px);}
-	to {-webkit-transform:translatey(100px);}
+	to {-webkit-transform:translatey(50px);}
 }
 
 
@@ -504,10 +512,128 @@
 	transition-duration: 1s;
 	-webkit-animation-name: sx;
 	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
 	-webkit-animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes sx{
-	from { -webkit-transform:translatey(100px);}
+	from { -webkit-transform:translatey(50px);}
 	to {-webkit-transform:translatey(0px);}
+}
+
+
+#animation32{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @naranja4;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name: sxr;
+	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes sxr{
+	from { border-radius:0em;}
+	to {border-radius:5em;}
+}
+
+
+#animation33{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @naranja4;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name: sxre;
+	-webkit-animation-duration:1s;
+/*para pausar el loop de la animacion quitar esta propiedad*/
+
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes sxre{
+	from { border-radius:0em;}
+	to {border-radius:10em;}
+}
+
+#animation34{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @naranja4;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name: sxref;
+	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes sxref{
+	0%{ -webkit-transform:scale(0,0);}
+	50%{-webkit-transform:scale(1,0.1);}
+	100%{-webkit-transform:scale(1,1);}
+
+}
+
+#animation35{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @naranja4;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name: sxrefa;
+	-webkit-animation-duration:1s;
+/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes sxrefa{
+	0%{ -webkit-transform:scale(0,0);}
+	50%{-webkit-transform:scale(0.1,1);}
+	100%{-webkit-transform:scale(1,1);}
+
+}
+
+#animation36{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @naranja4;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name: rotatega;
+	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes rotatega{
+	0%{ -webkit-transform:scale(0,0) rotate(0deg);}
+	50%{-webkit-transform:scale(0.1,1) rotate(180deg);;}
+	100%{-webkit-transform:scale(1,1) rotate(360deg);}
+
+}
+
+#animation37{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @naranja4;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name: sxrefq;
+	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes sxrefq{
+	0%{ -webkit-transform:scale(0,0)rotatey(0deg);}
+	50%{-webkit-transform:scale(1,0.1)rotatey(180deg);}
+	100%{-webkit-transform:scale(1,1)rotatey(0deg);}
+
 }
