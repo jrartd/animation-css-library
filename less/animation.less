@@ -1,6 +1,8 @@
 @import "variables.less";
 //geometry solid
 @cuadradro: 200px ;
+@cuadradro2: 100px ;
+
 @margincuadrado: 30px 0px 0px 0px;
 
 
@@ -635,5 +637,108 @@
 	0%{ -webkit-transform:scale(0,0)rotatey(0deg);}
 	50%{-webkit-transform:scale(1,0.1)rotatey(180deg);}
 	100%{-webkit-transform:scale(1,1)rotatey(0deg);}
+
+}
+
+
+
+#animation38{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @naranja4;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name: sxrefqw;
+	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes sxrefqw{
+	0%{ -webkit-transform:scale(1,1);}
+	50%{-webkit-transform:scale(1,0.1);}
+	100%{-webkit-transform:scale(0,0);}
+
+}
+
+#animation39{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @naranja4;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name: sxrq;
+	-webkit-animation-duration:1s;
+/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes sxrq{
+	0%{ -webkit-transform:scale(1,1);}
+	50%{-webkit-transform:scale(0.1,1);}
+	100%{-webkit-transform:scale(0,0);}
+
+}
+
+#animation40{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @naranja4;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name: rotatega;
+	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes rotatega{
+	0%{ -webkit-transform:scale(1,1) rotate(360deg);}
+	50%{-webkit-transform:scale(0.1,1) rotate(180deg);;}
+	100%{-webkit-transform:scale(0,0) rotate(0deg);}
+
+}
+
+#animation41{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @naranja4;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name: pepe;
+	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes pepe{
+	0%{ -webkit-transform:scale(1,1)rotatey(0deg);}
+	50%{-webkit-transform:scale(1,0.1)rotatey(180deg);}
+	100%{-webkit-transform:scale(0,0)rotatey(0deg);}
+
+}
+
+#animation42{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @naranja4;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name: pepaq;
+	-webkit-animation-duration:1s;
+	border-radius: 10em;
+	overflow: hidden;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes pepaq{
+	0%{-webkit-transform:scale(0,0);}
+	100%{-webkit-transform:scale(1,1);}
 
 }
