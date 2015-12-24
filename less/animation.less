@@ -1,4 +1,6 @@
-
+@import "variables.less";
+@cuadradro: 200px ;
+@margincuadrado: 30px 0px 30px 0px;
 
 /* cambio de color */
 
@@ -272,16 +274,51 @@
 	background-color: @red;
 	margin: @margincuadrado;
 	transition-duration: 1s;
-	-webkit-animation-name:rotsc;
+	-webkit-animation-name:rot;
+	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count:infinite;
 }
 
-@-webkit-keyframes rotsc {
+@-webkit-keyframes rot {
 	from {-webkit-transform:rotate(0deg) scale(1,1);}
-	
 	to {-webkit-transform:rotate(90deg) scale(0,0);}
 	
 	}
 
 
+ /* translatey(-100px) */
+#animation20{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @red;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name: sr;
+	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count:infinite;
+}
 
+@-webkit-keyframes sr{
+	from {-webkit-transform:scale(0,0) rotate(90deg);}
+	to {-webkit-transform:scale(1,1) rotate(0deg);}
+}
 
+#animation21{
+	width: @cuadradro;
+	height: @cuadradro;
+	background-color: @red;
+	margin: @margincuadrado;
+	transition-duration: 1s;
+	-webkit-animation-name:si;
+	-webkit-animation-duration:1s;
+	/*para pausar el loop de la animacion quitar esta propiedad*/
+	-webkit-animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes si{
+	from {-webkit-transform:scale(0,1);}
+	to {-webkit-transform:scale(1,1)}
+
+}
